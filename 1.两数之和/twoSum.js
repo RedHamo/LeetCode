@@ -7,8 +7,8 @@
 // @lc code=start
 /**
  * @param {number[]} nums
- * @return {number[]}
  * @param {number} target
+ * @return {number[]}
  */
 var twoSum = function(nums, target) {
     let hash = {[nums[0]]:0};
