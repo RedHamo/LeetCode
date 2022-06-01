@@ -8,6 +8,7 @@
 /**
  * @param {number[]} nums
  * @return {number[]}
+ * @param {number} target
  */
 var twoSum = function(nums, target) {
     let hash = {[nums[0]]:0};
