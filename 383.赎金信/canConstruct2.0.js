@@ -12,9 +12,11 @@
  */
 var canConstruct = function (ransomNote, magazine) {
     if (ransomNote.length > magazine.length) return false
+    let hash = {}
+    for (let i = 0; i < magazine.length; i++) hash[magazine[i]] = hash[magazine[i]] ? (hash[magazine[i]] + 1) : 1;
     for (let i = 0; i < ransomNote.length; i++) {
-        if (magazine.indexOf(ransomNote[i]) < 0) return false;
-        magazine = magazine.replace(ransomNote[i], '')
+        if ((hash[ransomNote[i]] || 0) < 1) return false;
+        hash[ransomNote[i]]--;
     }
     return true
 };
