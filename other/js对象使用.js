@@ -1,4 +1,4 @@
-// 为了解两数之和问题
+// 1.为了解两数之和问题
 class ListNode {
     constructor(val, next) {
         this.val = (val === undefined ? 0 : val)
