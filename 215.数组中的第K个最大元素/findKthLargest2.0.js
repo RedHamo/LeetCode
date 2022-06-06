@@ -11,7 +11,7 @@
  * @return {number}
  */
 var findKthLargest = function(nums, k) {
-    // TODO: 快排
+    // TODO 快排
     return nums.sort((a,b)=>b-a)[k-1]
 };
 // @lc code=end
