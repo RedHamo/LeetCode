@@ -10,9 +10,7 @@
  * @return {boolean}
  */
  var isPalindrome = function(x) {
-    let str = "" + x;
-    if (str.split("").reverse().join("") == str) return true;
-    return false;
+    return ("" + x).split("").reverse().join("") == x;
 };
 // @lc code=end
 

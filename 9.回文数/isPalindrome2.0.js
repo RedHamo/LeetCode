@@ -9,9 +9,16 @@
  * @param {number} x
  * @return {boolean}
  */
-// 反转一半
+// 双指针
  var isPalindrome = function(x) {
-    // TODO
+    if (x < 0) return false; //写了提高性能，不写代码简洁
+    x = "" + x;
+    let p = 0;
+    let l = x.length-1;
+    while(p<l){
+        if (x[p++] != x[l--]) return false;
+    }
+    return true;
 };
 // @lc code=end
 
