@@ -10,6 +10,7 @@
  * @return {string}
  */
  var longestPalindrome = function(s) {
+    // TODO 抄的代码
     let n = s.length;
     let res = '';
     let dp = Array.from(new Array(n),() => new Array(n).fill(false));//初始化数组 
