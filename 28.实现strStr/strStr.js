@@ -1,4 +1,5 @@
 /**
+ * 在同事家编写
  * @param {string} haystack
  * @param {string} needle
  * @return {number}
