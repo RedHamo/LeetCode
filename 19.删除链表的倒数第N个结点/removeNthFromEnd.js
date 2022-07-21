@@ -18,6 +18,7 @@
  * @return {ListNode}
  */
 var removeNthFromEnd = function(head, n) {
+    // 双指针
     let dummy = new ListNode();
     dummy.next = head;
     let n1 = dummy;
