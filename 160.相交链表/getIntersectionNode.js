@@ -29,6 +29,7 @@ var getIntersectionNode = function(headA, headB) {
         if(map.has(b)) return b;
         b = b.next;
     }
+    //tijiao
     return null;
 };
 // @lc code=end
