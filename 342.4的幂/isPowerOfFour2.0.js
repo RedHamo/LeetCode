@@ -10,8 +10,13 @@
  * @return {boolean}
  */
 var isPowerOfFour = function(n) {
-    let calcNum = 4;
-    return n>0 && (n&(n-1))==0 && n%(calcNum-1)==1;
+    if(n<1) return false;
+    while(true){
+        if(n==1) break;
+        if(~~n!=n) break;
+        n = n/4;
+    }
+    return n==1;
 };
 // @lc code=end
 
