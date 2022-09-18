@@ -1,0 +1,8 @@
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var smallestEvenMultiple = function(n) {
+    if(n/2 == n>>1) return n;
+    return 2 * n;
+};
