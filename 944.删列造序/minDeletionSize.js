@@ -2,7 +2,7 @@
  * @param {string[]} strs
  * @return {number}
  */
-var minDeletionSize = function(strs) {
+ var minDeletionSize = function(strs) {
     let result = 0;
     for(let i=0; i<strs[0].length; i++){
         let el = strs[0][i]
@@ -11,6 +11,7 @@ var minDeletionSize = function(strs) {
                 result++;
                 break;
             }
+            el = strs[j][i];
         }
     }
     return result;
