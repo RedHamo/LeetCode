@@ -12,5 +12,5 @@ var groupAnagrams = function(strs) {
 };
 
 function gethash(str){
-    return str.split("").sort((a,b)=>a.charCodeAt()-b.charCodeAt()).join("")
+    return str.split("").sort().join("")
 }
